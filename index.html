@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="id" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Growth Framework - Dominasi Properti 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Main Background Gradient (Now Solid Black)
+              'brand-bg-hero-start': '#000000', // Black
+              'brand-bg-hero-mid': '#000000',   // Black
+              'brand-bg-hero-end': '#000000',   // Black
+
+              // Navigation Bar
+              'brand-bg-navbar': '#000000', // Pure Black
+
+              // Card Backgrounds (Dark blue-gray with subtle fade - This is the "Blue Fade Accent")
+              'brand-bg-card-start': '#1e293b',
+              'brand-bg-card-end': '#334155',
+              
+              // Quote/Testimonial Card Backgrounds (Deeper fade)
+              'brand-bg-quote-card-start': '#0f172a',
+              'brand-bg-quote-card-end': '#1e293b',
+
+              // Primary CTA Buttons (Bright electric blue gradient - The ONLY button style)
+              'brand-cta-start': '#3b82f6',
+              'brand-cta-end': '#1d4ed8',
+              'brand-cta-hover-start': '#60a5fa', 
+              'brand-cta-hover-end': '#3b82f6',   
+
+              // Secondary CTAs (No longer used for buttons)
+              'brand-secondary-cta-bg': '#60a5fa',
+              'brand-secondary-cta-bg-hover': '#3b82f6',
+
+              // Text Colors
+              'brand-text-light': '#ffffff',     // Pure White (headers)
+              'brand-text-medium': '#cbd5e1',    // Soft Gray (body)
+              'brand-text-dark': '#94a3b8',      // Muted Gray (secondary info)
+              'brand-text-link': '#60a5fa',      // Blue Accent (for links, names/highlights)
+              'brand-primary': '#3b82f6', 
+              'brand-primary-hover': '#60a5fa',
+
+              // Borders
+              'brand-border': 'rgba(59, 130, 246, 0.2)',      // Subtle blue rim lighting on card borders
+              'brand-border-hover': 'rgba(79, 124, 255, 0.3)',
+              'brand-border-navbar': 'rgba(255, 255, 255, 0.1)', 
+
+              // Icon Colors (from Gemini Prompt)
+              'icon-blue': '#3b82f6',
+              'icon-green': '#10b981',
+              'icon-yellow': '#f59e0b',
+              'icon-red': '#ef4444',
+              'icon-purple': '#8b5cf6',
+              'icon-cyan': '#06b6d4',
+            },
+            fontFamily: {
+              sans: ['Inter', 'Segoe UI', 'Roboto', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            },
+            fontSize: { 
+              'hero-heading': '3.5rem',
+              'section-heading': '2.25rem',
+              'body-text': '1.125rem',
+              'button-text': '1rem',
+              'stat-number': '2.5rem',
+              'stat-label': '1rem',
+            },
+            lineHeight: {
+              'hero-heading': '1.1',
+              'section-heading': '1.2',
+              'body-text': '1.6',
+              'stat-number': '1',
+            },
+            letterSpacing: {
+              'extra-tight': '-0.05em',
+              'tight': '-0.025em',
+              'normal': '0',
+              'wide': '0.025em',
+              'wider': '0.05em',
+              'widest': '0.1em',
+            },
+            boxShadow: { 
+              'brand-shadow-subtle': '0 2px 8px rgba(0, 0, 0, 0.1)',
+              'brand-shadow-medium': '0 4px 15px rgba(0, 0, 0, 0.2)', 
+              'brand-shadow-strong': '0 10px 40px rgba(0, 0, 0, 0.3)', 
+              'brand-shadow-glow-blue': '0 4px 15px rgba(59, 130, 246, 0.4)', 
+              'brand-shadow-glow-blue-hover': '0 6px 20px rgba(59, 130, 246, 0.5)',
+            },
+            borderRadius: { 
+              'card': '0.75rem', 
+              'large-section': '1.5rem' 
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Babel Standalone for TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-brand-text-medium font-sans antialiased text-body-text leading-body-text">
+    <div id="root"></div>
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
